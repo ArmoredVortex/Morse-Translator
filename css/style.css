@@ -26,17 +26,19 @@ html {
     grid-row: 1;
 }
 
-input {
-    height: 100px;
-    border-radius: 25px;
+textarea {
+    height: 150px;
+    border-radius: 10px;
+    border-width: 2px;
     background-color: var(--bg-color);
     border-color: var(--foreground-color);
     border-style: solid;
     color: var(--foreground-color);
     font-size: 20px;
+    resize: none;
 }
 
-input:focus {
+textarea:focus {
     outline:none;
 }
 

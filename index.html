@@ -2,28 +2,31 @@
 <head>
     <title>Morse Code Translator</title>
     <style>
-        @import "style.css";
+        @import "./css/style.css";
     </style>
 </head>
 <body>
+<script src="./scripts/ttm.js"></script>
+<script src="./scripts/mtt.js"></script>
 <div class="grid-container">
     <h1 class="grid-item heading">Morse Code Translator</h1>
     <p class="grid-item">Text</p>
     <div></div>
     <p class="grid-item">Morse Code</p> 
-    <input type="text" class="grid-item inputbox">
+    <textarea id="inputbox" type="text" class="grid-item inputbox"></textarea>
     <div class="arrow-container">
         <img class="arrow" alt="convert arrow" src="./assets/double-horizontal-arrow-pointing-to-both-sides.png">
     </div>
-    <input type="text" class="grid-item outputbox">
+    <textarea id='outputbox'type="text" class="grid-item outputbox"></textarea>
     <div class="grid-item">
-    <button class="etm">Convert -></button>
+    <button id = 'ttm' class="ttm">Convert -></button>
     </div>
     <div></div>
     <div class="grid-item">
-    <button class="mte"><- Convert</button>
+    <button id = 'mtt' class="mtt"><- Convert</button>
     </div>
 </div>
+<script src="./scripts/converter.js"></script>
 </body>
 <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 </html>
